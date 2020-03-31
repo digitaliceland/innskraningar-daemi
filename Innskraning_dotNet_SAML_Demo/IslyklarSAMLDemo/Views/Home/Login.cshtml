@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login via innskraning.island.is</h2>
+<div class="row">
+    <div class="col-md-6">
+        <img src='@Href("~/Content/logo.png")' alt="island.is" />
+        <form method="post" action="@ViewBag.loginUrl">
+            @if (ViewBag.authid != null)
+            {
+                <input type="hidden" name="authid" value="@ViewBag.authid" />
+            }
+            <input type="hidden" name="qaa" value="@ViewBag.qaa" />
+            <input type="submit" class="btn btn-primary" style="width:100%;" value="Login" />
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Return";
+}
+
+<h2>Return</h2>
+<p>@ViewBag.message</p>
+<br />
+@if(ViewBag.attributes != null)
+{
+    foreach(var attr in ViewBag.attributes)
+    {
+        <p>@attr</p>
+    }
+}
+@if(ViewBag.saml != null)
+{
+    @Html.Raw(Html.Encode(ViewBag.saml))
+}
