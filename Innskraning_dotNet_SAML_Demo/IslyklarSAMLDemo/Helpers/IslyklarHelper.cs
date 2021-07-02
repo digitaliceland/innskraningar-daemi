@@ -22,7 +22,7 @@ namespace IslyklarSAMLDemo.Helpers
         /// <summary>
         /// Name of issuing CA
         /// </summary>
-        private static string IssuerName = "Traustur bunadur";
+        private static string IssuerName = "Fullgilt audkenni";
         /// <summary>
         /// SSN of issuing CA (Auðkenni)
         /// </summary>
